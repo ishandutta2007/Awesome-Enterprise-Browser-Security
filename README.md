@@ -9,7 +9,7 @@
 <br/><br/>
 
 <a href="https://github.com/ishandutta2007/Awesome-Awesome-Awesome"><img src="https://img.shields.io/badge/Awesome-%E2%9C%94-blueviolet?style=flat-square&logo=github" alt="Awesome"/></a><a href="https://discord.gg/jc4xtF58Ve"><img src="https://img.shields.io/badge/Discord-5865F2?style=for-the-badge&logo=discord&logoColor=white" alt="Discord" /></a>
-<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Browser-Security/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Browser-Security?style=flat-square&logo=github&color=gold" alt="GitHub Stars" /></a>
+<a href="https://github.com/ishandutta2007/Awesome-Enterprise-Browser-Security/stargazers"><img src="https://img.shields.io/github/stars/ishandutta2007/Awesome-Enterprise-Browser-Security?style=flat-square&logo=github&color=gold" alt="GitHub_Stars" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Browser-Security/network/members"><img src="https://img.shields.io/github/forks/ishandutta2007/Awesome-Enterprise-Browser-Security?style=flat-square&logo=github&color=blue" alt="GitHub Forks" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Browser-Security/issues"><img src="https://img.shields.io/github/issues/ishandutta2007/Awesome-Enterprise-Browser-Security?style=flat-square" alt="GitHub Issues" /></a>
 <a href="https://github.com/ishandutta2007/Awesome-Enterprise-Browser-Security/blob/main/LICENSE"><img src="https://img.shields.io/badge/License-CC0_1.0-lightgrey.svg?style=flat-square" alt="License" /></a>
@@ -88,7 +88,7 @@ The following enterprise platforms offer managed browser governance, remote isol
 
 Open-source tooling provides transparent components for remote isolation, script blocking, system sandboxing, and browser attack surface auditing.
 
-Projects below are sorted in **descending order by GitHub star count**. Beside each repository name is a live social badge linking directly to that project's stargazers page:
+Projects below are sorted in **descending order by GitHub Stars_Count**. Beside each repository name is a live social badge linking directly to that project's stargazers page:
 
 ### 1. [uBlock Origin](https://github.com/gorhill/uBlock) [![Stars](https://img.shields.io/github/stars/gorhill/uBlock?style=social&color=white)](https://github.com/gorhill/uBlock/stargazers) 🛡️
 - **Description**: Efficient, wide-spectrum content-blocking browser extension that strips malicious advertising networks, tracking scripts, coin miners, and known malware vectors at the network layer.
