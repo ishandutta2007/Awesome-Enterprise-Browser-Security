@@ -32,6 +32,7 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 ## Table of Contents
 
+- [Sector Overview & Market Dynamics](#sector-overview--market-dynamics)
 - [SaaS/Hosted Platforms](#saas-hosted-platforms)
 
 - [Open-Source GitHub Projects](#open-source-github-projects)
@@ -42,62 +43,36 @@ Contributions welcome! Open a PR to add/update entries. Keep descriptions factua
 
 
 
+## Sector Overview & Market Dynamics
+
+The global enterprise browser and browser security market is estimated between **$1.5B and $3.4B**, growing at a **~21% CAGR** toward an estimated **$8.5B–$10B+ by 2030**. The sector is **moderately to highly concentrated at the top**—with ~70%+ of market value held by major platform consolidators and pioneers (Google, Palo Alto Networks, CrowdStrike, Zscaler, Island), while aggressive M&A absorbs niche startups into broader Zero Trust/SASE ecosystems.
+
+
 ## SaaS/Hosted Platforms
 
+| Platform | Parent Company / Vendor | Company Size (Market Cap / Valuation / Revenue) | Starting Pricing (Specific Tier) | Free Tier / Trial Limit | Key Focus & Deployment Architecture |
+|---|---|---|---|---|---|
+| **Google Chrome Enterprise Premium** | Alphabet Inc. (Google) | Market Cap: **~$3.98T** (FY25 Rev: ~$350B) | **$6.00 / user / month** ($72 / user / year) | **Free forever tier** (Chrome Enterprise Core) for up to 10 admin seats with unlimited fleet browsers; lacks paid DLP, real-time phishing, and context-aware Zero Trust policies | Native browser tier with integrated DLP, context-aware access, and deep malware protection without changing browsers. |
+| **Broadcom Symantec Web Isolation** | Broadcom Inc. | Market Cap: **~$1.60T** (FY25 Rev: ~$51B) | **~$20.13 / user / year** (reseller list; cloud suites from $75 / user / year) | **90-day trial** via Broadcom Support portal (eval licenses typically feature a 30-day initial grace period before activation) | Cloud remote browser isolation (RBI) executing untrusted web code in isolated containers away from corporate endpoints. |
+| **Palo Alto Prisma Access Browser (Talon)** | Palo Alto Networks | Market Cap: **~$135B** (FY25 Rev: $9.2B) | **~$35.00 / user / year** (baseline enterprise SASE browser add-on benchmark; enterprise-bundled) | **30-day free trial** available via AWS Marketplace / Sales PoC (enterprise evaluation licenses) | Dedicated Chromium enterprise browser integrated into Prisma SASE; deep BYOD/contractor data security and DLP. |
+| **CrowdStrike Falcon Secure Access (Seraphic)** | CrowdStrike Holdings | Market Cap: **~$105B** (FY25 Rev: $3.95B) | **$59.99 / device / year** ($4.99/mo, baseline Falcon Go platform entry; browser module requires Falcon ecosystem) | **15-day free trial** of Falcon platform (no credit card required; access to console and endpoint policy testing) | Engine-level browser runtime security across any standard browser; JavaScript randomization and in-session zero trust. |
+| **Zscaler Zero Trust Browser (SquareX)** | Zscaler, Inc. | Market Cap: **~$41.8B** (FY25 Rev: $2.17B) | **$50.00 / user / year** (~$4.17/mo, baseline browser isolation add-on; advanced SKUs up to $120–$180/yr) | **30-day trial** for advanced security modules (formal PoC evaluations configurable up to 60–90 days) | Browser Detection & Response (BDR), extension monitoring, and client-side zero-trust DLP bundled into Zero Trust Exchange. |
+| **Akamai Workforce Protector (LayerX)** | Akamai Technologies | Market Cap: **~$13.5B** (FY25 Rev: $3.9B) | **~$395.00 / year** (entry organizational package list benchmark; enterprise seat-based per user) | **No free tier**; 14-to-30 day structured Proof of Concept (PoC) evaluation available upon sales qualification | Lightweight browser extension for shadow AI governance, GenAI DLP, and browser extension risk management. |
+| **Island Enterprise Browser** | Island Technology Inc. | Valuation: **$6.4B** (Series F; $100M+ ARR) | **$18.00 / user / month** (MSP seat baseline; direct enterprise contracts start at $25,000–$250,000/yr commitments) | **60-day evaluation trial** under standard Carahsoft / enterprise subscription evaluation terms | Custom Chromium enterprise browser acting as a local VDI replacement with full policy, clipboard, and file exfiltration governance. |
+| **Menlo Security** | Menlo Security Inc. | Valuation: **$800M** (Series E; ARR: $100M+) | **$130.00 / user / year** ($10.83 / user / month on AWS Marketplace baseline 0–99 seat band) | **30-day evaluation trial** under standard Menlo EULA terms (provides temporary cloud sandbox/isolation access) | Secure digital twin cloud browser isolation delivering safe rendering to any browser without local agents. |
+| **Authentic8 Silo** | Authentic8, Inc. | Revenue: **~$50M–$100M** (Series/Debt: $12M+) | **$1,450.00 / user / year** (~$120.83/mo, Silo Workspace Local Plan; Multi-Region $2,450/yr, Global $3,450/yr) | **30-day free trial** for individual evaluation (limited egress nodes and prompt allocations) | Cloud-native isolated container browser designed for investigations, OSINT, and managed attribution networking. |
 
+### SaaS Platform Architectural Profiles
 
-- **CrowdStrike Falcon Secure Access (Seraphic)**
-
-  **Engine-level browser security** across any browser without forcing replacement. CrowdStrike acquired **Seraphic** (browser runtime security) and **SGNL** (continuous authorization) to embed zero-trust enforcement directly into browser sessions . **Features**: In-session zero trust with real-time risk signals from Falcon telemetry; **JavaScript engine randomization** to stop session hijacking and man-in-the-browser attacks at execution; **GenAI guardrails** to prevent shadow AI exfiltration; **agentless-style protection** for contractors on unmanaged devices . **Pricing**: Quote-only; requires Falcon platform. **Free tier**: None. **Best for**: CrowdStrike customers wanting browser security integrated with endpoint and identity telemetry—**trade-off**: requires Falcon ecosystem investment.
-
-
-
-- **Island Enterprise Browser**
-
-  **Chromium-based enterprise browser** with embedded security and governance. **Pricing**: **Predictable per-user subscription**; no backend infrastructure required; cloud-based Island Management Console . **Free tier**: None; free mobile app available for iOS . **Best for**: organizations wanting a managed enterprise browser that replaces VDI for SaaS and web apps—**trade-off**: requires users to adopt a dedicated browser (Chromium-based); no proxy or extension model.
-
-
-
-- **Palo Alto Prisma Access Browser (Talon)**
-
-  **Enterprise browser integrated with Prisma SASE**. Palo Alto acquired **Talon Cyber Security** for **over $600 million** in November 2023 . **Features**: Secures BYOD and unmanaged devices by isolating work activity in the browser; **data security controls** to prevent exfiltration; **SSO integration**; deep visibility into work-related SaaS activity without touching personal usage . **Pricing**: Quote-only; bundled with Prisma SASE. **Free tier**: None. **Best for**: Palo Alto SASE customers wanting browser security for managed and unmanaged devices—**trade-off**: requires Prisma SASE commitment.
-
-
-
-- **Google Chrome Enterprise Premium**
-
-  **Advanced security tier for Chrome** with DLP, real-time phishing protection, and context-aware access. **Pricing**: **Chrome browser and cloud management are free**; Chrome Enterprise Premium requires contacting sales for pricing . **Free tier**: Yes, Chrome browser and cloud management are free. **Best for**: organizations already standardized on Chrome wanting DLP and zero-trust access without a new browser—**trade-off**: Premium pricing is quote-only; advanced protections require paid tier .
-
-
-
-- **Menlo Security**
-
-  **Cloud-based browser security** using a **secure digital twin browser** to isolate web content. **Pricing**: Quote-only; **AWS Marketplace listing shows $130/year** for Menlo Secure Enterprise Browser . **Free tier**: None. **Best for**: organizations wanting isolation without endpoint agents or browser replacement—**trade-off**: cloud isolation can introduce latency; per-user pricing.
-
-
-
-- **Akamai Workforce Protector (LayerX)**
-
-  **Browser extension for AI governance and enterprise browser security**. Akamai acquired **LayerX** in July 2026 for **~$205 million** . **Features**: **Shadow AI discovery**, **GenAI DLP**, AI access control, browser extension risk management, shadow SaaS detection, phishing protection; delivered via lightweight extension across Chrome, Edge, Safari, Firefox—no dedicated browser required . **Pricing**: Quote-only; Capterra lists **starting at $395** (scope unclear) . **Free tier**: None; no free trial listed. **Best for**: organizations needing AI usage governance and browser DLP without changing browsers—**trade-off**: no public pricing; recently acquired, roadmap may shift.
-
-
-
-- **Zscaler Zero Trust Browser**
-
-  **Browser security within Zscaler Zero Trust Exchange**. Zscaler acquired **SquareX** (browser detection and response) in February 2026 . **Features**: **Browser Detection and Response (BDR)** for client-side attacks, BitB phishing, malicious extensions, prompt injection; **in-browser DLP** for copy/paste, uploads, screenshots, dynamic watermarking; **flexible enforcement**—cloud isolation, browser extension, or enterprise browser . **Pricing**: Quote-only; bundled with Zscaler platform. **Free tier**: None. **Best for**: Zscaler customers wanting browser security integrated with their Zero Trust platform—**trade-off**: requires Zscaler investment.
-
-
-
-- **Authentic8 Silo**
-
-  **Cloud-native isolated browser** for investigations and managed attribution. **Features**: Remote browser isolation; **managed attribution** with hundreds of locations; **OSINT tools** (Gofer, Collector, Case Manager); no endpoint exposure; evidence preservation . **Pricing**: Paid subscription-based . **Free tier**: None. **Best for**: threat intelligence, law enforcement, and due diligence teams needing safe, anonymous research—**trade-off**: not a general workforce browser; investigation-focused.
-
-
-
-- **Broadcom Symantec Web Isolation**
-
-  **Remote browser isolation** within Symantec Web Security Service. **Features**: Executes web sessions away from endpoints, sending only safe rendering; **no endpoint agent**; integrates with Symantec Secure Web Gateway for policy-based isolation of uncategorized or risky sites; supports all browsers and devices . **Pricing**: **License listed at $20.13** on Tecisoft (reseller, stock limited) . **Free tier**: None. **Best for**: Symantec Web Security Service customers wanting isolation without agents—**trade-off**: requires Symantec SWG; limited public pricing.
-
+- **CrowdStrike Falcon Secure Access (Seraphic)**: Engine-level runtime protection across any browser using JavaScript engine randomization; requires CrowdStrike Falcon ecosystem.
+- **Island Enterprise Browser**: Dedicated Chromium browser replacing legacy VDI with zero backend infrastructure requirements and embedded governance.
+- **Palo Alto Prisma Access Browser (Talon)**: Secure Chromium enterprise browser acquired for >$600M, natively tied to Prisma SASE for managed and BYOD endpoints.
+- **Google Chrome Enterprise Premium**: Cloud-managed native security layer directly inside standard Chrome, providing context-aware access and enterprise DLP.
+- **Menlo Security**: Cloud-based browser isolation with secure digital twin browsing, eliminating malware delivery without endpoint agent dependencies.
+- **Akamai Workforce Protector (LayerX)**: Browser extension architecture acquired for ~$205M, specialized in Shadow AI discovery and GenAI data protection.
+- **Zscaler Zero Trust Browser (SquareX)**: Client-side detection and response protecting against malicious extensions, BitB phishing, and prompt injection.
+- **Authentic8 Silo**: High-security isolated cloud environment focused on OSINT, law enforcement, and anonymous managed attribution workflows.
+- **Broadcom Symantec Web Isolation**: Remote browser isolation integrated with Symantec Web Security Service (WSS) and Secure Web Gateway.
 
 
 ## Open-Source GitHub Projects
